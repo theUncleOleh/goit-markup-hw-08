@@ -1,0 +1,57 @@
+.hero-container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  background-color: $footer-back;
+    
+  /* outline: 2px solid green; */
+  min-height: 600px;
+}
+  
+.hero {
+  text-align: center;
+}
+  
+.hero__overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/img5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+  
+.hero__title {
+  padding-top: 200px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  
+/* outline: 1px solid green; */
+  
+  color: $white-text-collor;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+  
+/* кнопка заказа услуг */
+  
+.hero__button {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  
+  background-color: $link-collor;
+  color: $white-text-collor;
+}
+  

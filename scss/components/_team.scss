@@ -1,0 +1,120 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+  background-color: $team-back;
+}
+  
+.team__title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  
+  color: $h-collor;
+}
+  
+.team-card {
+  display: flex;
+    
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+  
+/* .team-card-item {
+    outline: 1px solid #008000;
+  } */
+  
+.team-card__item {
+  margin-right: 30px;
+  
+  background-color: $white-text-collor ;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+  
+
+  
+.team-card__name {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: $h-collor;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+  
+.team-card__profession {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+  
+.sociall-box{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding-left: 0px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.sociall-box__item:not(:first-child) {
+  margin-left: 10px;
+}
+  
+  
+/*  сначала дать цвет иконки на ссылку, а потом изменить ее при ховере */
+  
+.sociall-box__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  @include transition(background-color);
+  @include transition(color);
+
+  color: $social-icon;
+    
+  /* background-color: blue; */
+
+  &:hover,
+  &:focus {
+    background-color: $link-collor;
+    color: $white-text-collor;
+  }
+}
+
+.sociall-box__icon {
+  fill: currentColor;
+}
+  
+/* .icon{
+    fill: var( --social-icon)
+  
+  } */
+  
