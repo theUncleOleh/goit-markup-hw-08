@@ -1,0 +1,53 @@
+.main-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 50px;
+}
+  
+
+.main-button__item{
+  display: flex;
+  height: 38px;
+  background-color: $team-back;
+    
+  /* border-radius: 4px; */
+  color: $h-collor;
+  
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
+}  
+
+.main-button__link{
+  display: flex;
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  
+  @include transition(background-color);
+  @include transition(color);
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $h-collor;
+
+  
+  &:hover,
+  &:focus {
+    background-color: $link-collor;
+    color: $white-text-collor;
+    border-color: $link-collor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

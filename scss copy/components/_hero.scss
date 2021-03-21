@@ -1,5 +1,5 @@
 .hero-container {
-  width: 480px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -8,7 +8,7 @@
   background-color: $footer-back;
     
   /* outline: 2px solid green; */
-  min-height: 400px;
+  min-height: 600px;
 }
   
 .hero {
@@ -16,18 +16,18 @@
 }
   
 .hero__overlay {
-  width: 480px;
-  height: 400px;
+  max-width: 1600px;
+  height: 600px;
   margin-right: auto;
-  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/himg.jpg);
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/img5.jpg);
   background-position: center;
   background-size: cover;
 }
   
 .hero__title {
-  margin-top: 0px;
+  padding-top: 200px;
   margin-bottom: 30px;
-  padding-top: 118px;
+  margin-top: 0px;
   
 /* outline: 1px solid green; */
   
@@ -35,8 +35,8 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6;
+  font-size: 44px;
+  line-height: 1.36;
   
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -46,12 +46,10 @@
   
 .hero__button {
   display: inline-block;
-  padding: 10px 32px;
+  padding: 16px 32px;
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
-   
-  
   
   background-color: $link-collor;
   color: $white-text-collor;

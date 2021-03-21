@@ -1,27 +1,27 @@
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   
   background-color: $team-back;
 }
   
 .team__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-top: 0px;
   
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 1.17;
+  font-size: 36px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   
   color: $h-collor;
 }
   
 .team-card {
-  // display: flex;
+  display: flex;
     
   margin-left: 0px;
   padding-left: 0px;
@@ -34,20 +34,15 @@
   } */
   
 .team-card__item {
-  // margin-right: 30px;
-  width: 450px;
-  height: 622px;
+  margin-right: 30px;
+  
   background-color: $white-text-collor ;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
-  
-  &:last-child{
-    margin-bottom: 60px;
+
+  &:last-child {
+    margin-right: 0px;
   }
-  // &:last-child {
-  //   margin-right: 0px;
-  // }
 }
   
 
@@ -73,7 +68,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.1718;
+  line-height: 1.1875;
 }
   
 .sociall-box{
@@ -82,7 +77,7 @@
   justify-content: center; 
   padding-left: 0px;
   margin-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .sociall-box__item:not(:first-child) {

@@ -1,11 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #757575;
-  padding-top: 60px;
+  @media screen and(min-width: 480px){
+    padding-top: 60px;
+  }
+ 
 }
 
 .container {
-  width: 480px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
