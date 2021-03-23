@@ -13,20 +13,66 @@
   }
 }  
 
-.page-header__nav {
- 
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $white-text-collor;
+  transform: translateX(100%);
+  @include transition (transform);
+  
+  z-index: 5;
+}
+  
+.menu-container.is-open{
+  transform: translateX(0);
+}
+  
+.menu-toggle{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   
- 
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+    
+   
+  
+  &:hover  .menu-toggle__icon,
+  &:focus  .menu-toggle__icon {
+    fill: $link-collor;
+    @include transition(fill);
+  }
 }
+  
+  
+@media (min-width: 768px){
+  .menu-toggle{
+    display: none;
+  }
+}
+
     
 /*  Логотип */
     
 .logo {
-  
-  display: flex;
+  display: block;
+  // display: flex;
+  padding-top: 16px;
   
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -43,19 +89,212 @@
     color: black;
   }
 }
-  
+
+
+
+// .mobile-button {
+//   position: absolute;
+//   top: 10px;
+//   right: 15px;
+//   display: inline-flex;
+//   border: none;
+//   padding: 0px;
+//   background-color: transparent;
+// }
+
+// .mobile-button__close{
+//   display: none;
+// }
+
+// .mobile-button.is-open .mobile-button__close{
+//   display: block;
+// }
+
+// .mobile-button.is-open .mobile-button__menu {
+//   display: none;
+// }
+
 /* Навигация по сайту */
     
+
 .site-nav {
-  display: none;  
+  display: flex;
+  align-items: center;
+    
+/* margin-left: 93px; */
+    
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+@media (max-width: 767px) {
+  .site-nav{
+    display: none;
+  }
+}  
+
+.site-nav__item {
+  margin-left: 50px;
+}
+  
+// .site-nav .item:last-child {
+//   margin-right: 0px;
+// }
+    
+/* .site-nav .item {
+      outline: 1px solid greenyellow;
+    } */
+    
+.site-nav__link {
+  display: block;
+    
+  padding-top: 32px;
+  padding-bottom: 32px;
+    
+  color: $h-collor;
+  
+  &:hover,
+  &:focus {
+    color: $link-collor ;
+  }
+  
+  
+  /* .site-nav .link-current{
+      position: relative;
+  } */
+    
+}
+  
+.site-nav__link {
+  @include transition(color);
+}
+  
+  
+.site-nav__link--current {
+  position: relative;
+    
+  display: block;
+    
+  padding-top: 32px;
+  padding-bottom: 32px;
+    
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $link-collor;
+  
+  &::after {
+    content: '';
+      
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+      
+    background-color: $link-collor;
+  }
+}
+    
+.site-nav__link {
+  display: block;
+    
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+    
+  
+    
+  /* навигация мейл и телефон */
+    
+.nav-field {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+    
+  @include  transition(color)
+  }
+   
+@media (max-width: 767px){
+  .nav-field{
+    display: none;
+  }
+} 
+
+.nav-field__link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 0px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: $primary-text-color ;
+}      
+  
+.nav-field__item:not(:first-child) {
+  margin-left: 50px;
+}
+  
+.nav-field__link{
+  &:hover,
+  &:focus {
+    color: $link-collor;
+  }
+    
+    
+}
+  
+  
+.nav-field__icon {
+    
+  /* display: block; */
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $primary-text-color;
+    
+    /* fill: carrentColor; */
+}
+  
+.nav-field__icon {
+  fill: currentColor;
+}
+  
+/* .nav-link {
+      display: flex;
+      align-content: center;
+    } */
+    
+/* .nav-field__item:hover
+    .nav-field__item:focus {
+      color: $link-collor;
+    } */
+    
+  
+    
+/* .item {
+      outline: 1px solid #008000
+    } */
+    
+/* .nav-links .item {
+      outline: 1px solid green;
+  } */
 
 
   
     
   /* навигация мейл и телефон */
     
-.nav-field {
-  display: none;
-}
+
  

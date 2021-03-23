@@ -1,0 +1,140 @@
+.mobile-nav {
+  margin-right: 40px;
+  margin-top: 48px;
+}  
+
+      
+.mobile-nav__link {
+  @include transition(color);
+}
+
+.mobile-nav__link--current {
+  display: block;
+        
+  margin-bottom: 32px;
+    
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+  color: $link-collor;
+}
+
+.mobile-nav__link{
+  display: block;
+        
+  margin-bottom: 32px;
+    
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+         
+  color: $h-collor;
+      
+  &:hover,
+  &:focus {
+    color: $link-collor ;
+  }
+}
+        
+      
+        
+/* навигация мейл и телефон */
+        
+.mobile-field {
+  
+  margin-left: 40px;
+  margin-top: 302px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+        
+  @include  transition(color)
+}
+     
+    
+.mobile-field__link--tel{
+  display: block;
+  
+  margin-bottom: 32px;
+  margin-top: 0px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  color: $link-collor ;
+}      
+      
+    
+      
+.mobile-field__link--tel{
+  &:hover,
+  &:focus {
+    color: $link-collor;
+  }
+}
+  
+.mobile-field__link--mail{
+  display: block;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666;
+  letter-spacing: 0.02em;
+  color: $primary-text-color ;
+}
+ 
+.mobile-social{
+  margin-left: 40px;
+  margin-top: 64px;
+  
+  display: flex;
+  
+  padding-left: 0px;
+  margin-bottom: 0px;
+  
+}     
+
+.mobile-social__link{
+ 
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $link-collor;
+}
+
+.mobile-social__item:not(:first-child){ 
+  
+  margin-left: 10px;
+}
+
+.mobile-social__item{
+  padding: 10px;
+}
+
+  
+
+.mobile-social__item:not(:last-child){
+  
+  
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+
+}
+
+
+
+
+
+
+

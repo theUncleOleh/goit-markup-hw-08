@@ -1,12 +1,16 @@
 .footer-wrap{
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+//
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
 }
-  
+
 .footer__nav {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  align-items: center;
 }
   
 .footer {
@@ -15,8 +19,8 @@
 }
   
 .logo--padding {
-  padding-top: 60px;
   
+  padding-top: 60px;
 }
   
   
@@ -56,9 +60,10 @@
 .address-field__nav-field--flex{
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 0px;
   margin-bottom: 0px;
-  margin-top: 9px;
+  margin-top: 8px;
 }
   
 
@@ -67,15 +72,15 @@
     
   /* display: block; */
   
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   @include transition(color);
   
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.714;
     
   color: $primary-text-color;
  
@@ -89,6 +94,8 @@
 .sociall{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
    
 }
   
@@ -97,6 +104,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+
 }
   
 /* .footer-sociall {
@@ -111,7 +119,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-text-collor;
@@ -151,9 +159,8 @@
 .sign-group{
   display: flex;
   flex-direction: column;
-  
-  /* margin-left: auto ;
-margin-right: 0; */
+  align-items: center;
+  margin-top: 60px;
 }
   
 .sign-group__title{
@@ -162,7 +169,7 @@ margin-right: 0; */
   /* position: absolute;
       top: 0px;
       right: 0; */
-  margin-top: 72px; 
+  // margin-top: 72px; 
   margin-bottom: 20px;
   
   font-family: Roboto, sans-serif;
@@ -177,8 +184,8 @@ margin-right: 0; */
 }
   
 .sign-group__field{
-  display: block;
-    
+  display: flex;
+  flex-direction: column;
   width: 358px;
   height: 50px;
     
@@ -198,19 +205,24 @@ margin-right: 0; */
   
 .sign-group__item{
   display: flex;
+  flex-direction: column;
+
 }
   
 .sign-group__button{
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
   
 .sign-group__btn{ 
-   
+  
   width: 200px;
   height: 50px;
   background-color: $link-collor;
   cursor: pointer;
-  margin-left: 12px;
+  // margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -226,14 +238,14 @@ margin-right: 0; */
   line-height: 1.875;
     
     
-  display: flex;
-  align-items: center;
-  text-align: center;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
   letter-spacing: 0.06em;
   color: $white-text-collor;
 }
   
-.sign-group__icon{
+.sign-group__icon {
   position: absolute;
   top: 13px;
   right: 28px;
