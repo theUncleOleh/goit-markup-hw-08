@@ -22,7 +22,18 @@
         
                 <a class="logo" href="WebStudio"> <span class="logo__text logo__text--blue">Web</span><span class="logo__text logo__text--black">Studio</span>
                 </a>
+                <button  class=" menu-toggle js-open-menu " 
+                aria-expanded="false"
+                aria-controls="mobile-menu" >
         
+            <svg class="menu-toggle__icon" 
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"  >
+                
+                <use class="mobile-button__menu" href="./images/symbol-defs.svg#icon-mobile-menu" ></use>
+            </svg>
+        </button>
                 <ul class="site-nav">
                     <li class="site-nav__item"  >
                         <a class="site-nav__link" href="./index.html">Студия</a>
@@ -289,7 +300,67 @@
 </div>
     </div>
         </footer>
-
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+             
+             <svg class="menu-toggle__icon"
+             width="40px" 
+             height="40px">
+                 <use href="./images/symbol-defs.svg#icon-close_40px-1" ></use>
+             </svg> 
+            </button>
+             <ul class="mobile-nav" > 
+                <li class="mobile-nav__item" >
+                    <a class="mobile-nav__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-nav__item" >
+                    <a class="mobile-nav__link--current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item" >
+                    <a class="mobile-nav__link" href="./contact.html">Контакты</a>
+                </li>
+          </ul>
+        
+          
+           <ul  class="mobile-field">
+            <li class="mobile-field__item" >
+                <a class="mobile-field__link--tel" href="tel:+380961111111"> 
+                    
+                
+                +38 096 111 11 11</a>
+            </li>
+                <li class="mobile-field__item" > 
+                 <a  
+                      class="mobile-field__link--mail"  href="mailto:info@devstudio.com" > 
+                      
+                    
+                      info@devstudio.com</a>
+                </li>
+               
+                
+           </ul>
+           <ul class=" mobile-social" >
+    <li class="mobile-social__item" >
+        <a class="mobile-social__link" href="">Instagram</a>
+    </li>
+    <li class="mobile-social__item" >
+        <a class="mobile-social__link" href="">Twitter </a>
+    </li>
+    <li class="mobile-social__item" >
+        <a class="mobile-social__link" href="">Facebook</a>
+    </li>
+    <li class="mobile-social__item" >
+        <a class="mobile-social__link" href="">LinkedIn</a>
+    </li>
+           </ul>
+            </div>
+            <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
     

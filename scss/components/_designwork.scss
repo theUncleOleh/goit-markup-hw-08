@@ -2,14 +2,7 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-  
-.progects {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+
   
 .progects__item {
   display: flex;
@@ -22,13 +15,7 @@
   
   background-color: $white-text-collor;
 
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-    
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
+
 }
 /* .progects-name:hover,
   .progects-name:focus{

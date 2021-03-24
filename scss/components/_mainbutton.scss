@@ -1,33 +1,44 @@
 .main-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  padding-left: 0px;
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  // justify-content: center;
+  // margin-top: 0px;
+  // padding-left: 0px;
+  // margin-bottom: 50px;
+  padding: 0px;
+  margin-left: -8px;
+
 }
   
 
 .main-button__item{
-  display: flex;
+  display: inline-flex;
   height: 38px;
   background-color: $team-back;
     
   /* border-radius: 4px; */
   color: $h-collor;
   
-  &:not(:first-child) {
-    margin-left: 8px;
-  }
+  
+  margin-left: 8px;
+  
+  
+
+  margin-bottom: 15px;
+  
 }  
 
 .main-button__link{
-  display: flex;
+  display: inline-flex;
+  height: 26px;
   border-radius: 4px;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
   border: none;
+
   
   @include transition(background-color);
   @include transition(color);
@@ -36,7 +47,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   color: $h-collor;

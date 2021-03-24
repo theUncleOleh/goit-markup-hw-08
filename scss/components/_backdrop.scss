@@ -56,7 +56,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-  
+
+@media screen and(min-width: 480px){
+  .modal{
+    max-width: 450px;
+    max-height: 609px;
+  }
+} 
+
 .modal__btn{
   position: absolute;
   top: 8px;
@@ -98,11 +105,16 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 12px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+  
   
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: $h-collor;
 }
+

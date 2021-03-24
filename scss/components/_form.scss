@@ -10,7 +10,15 @@
  
   /* outline: 1px solid #008000; */
 }
-  
+ 
+
+@media screen and(min-width: 480px){
+  .form{
+    width: 370px;
+    height: 342px;
+  }
+}
+
 .form__wrap {
   display: flex;
   flex-direction: column;
@@ -21,7 +29,16 @@
   margin-bottom: 10px;
   width: 448px;
 }
-  
+
+@media screen and(min-width: 480px){
+  .form__wrap{
+    width: 370px;
+    margin-left: 40px;
+    margin-right: auto;
+    
+  }
+}
+
 .form__input {
   width: 100%;
   height: 40px;
@@ -44,7 +61,7 @@
     @include transition(fill);
   }
 }
-  
+
 .form__box {
   position: relative;
 }
@@ -92,22 +109,37 @@
   
   cursor: pointer;
 }
-  
+@media screen and(min-width: 480px){
+  .form-area__label{
+    font-size: 12px;
+    line-height: 1.1666;
+  }
+}
+
 .form-area {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
-  
+@media screen and(min-width:480px){
+  .form-area{
+    width: 370px;
+    margin-left: 40px;
+    margin-right: auto;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
 .form-area__text {
   height: 120px;
   width: 100%;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 10.5px;
-  padding-top: 10.5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   resize: none;
 
   &:hover,
@@ -122,8 +154,10 @@
 .form-checkbox__label{
   display: flex; 
   flex-direction: row;
-  padding-top: 35px;
+  padding-top: 20px;
   padding-bottom: 30px;
+  margin-left: 40px;
+
   
   cursor: pointer;
 }
@@ -136,7 +170,7 @@
   
 .form-checkbox__icon{
     
-  margin-left: 39px;
+  
   width: 16px;
   height: 15px;
   border: 1px solid #212121;
@@ -147,7 +181,14 @@
   
   margin-bottom: 0;
   margin-top: 0px;
-  padding-left: 9px;
+  padding-left: 8px;
+  
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.1666;
   
 }
   
@@ -165,7 +206,7 @@
   
 .form-checkbox__btn {
   display: block;
-  margin-left: auto;
+  margin-left: 125px;
   margin-right: auto;
   width: 200px;
   height: 50px;
