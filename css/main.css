@@ -449,7 +449,7 @@ a:focus {
   background-color: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  width: 450px;
+  width: 100%;
 }
 
 .frame__text {
