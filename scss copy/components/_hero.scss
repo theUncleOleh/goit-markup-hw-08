@@ -1,14 +1,14 @@
 .hero-container {
-  width: 600px;
+  
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero {
   background-color: $footer-back;
-    
+  width: 100vw;
   /* outline: 2px solid green; */
-  min-height: 600px;
+  
 }
   
 .hero {
@@ -16,16 +16,26 @@
 }
   
 .hero__overlay {
-  max-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   margin-right: auto;
-  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/img5.jpg);
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/himg.jpg);
   background-position: center;
   background-size: cover;
-}
+
   
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__overlay{
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/himg@2x.jpg)
+  }
+
+}
+
 .hero__title {
-  padding-top: 200px;
+  padding-top: 118px;
   margin-bottom: 30px;
   margin-top: 0px;
   

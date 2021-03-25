@@ -1,17 +1,27 @@
 .page-header {
   position: fixed;
 
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 80px;
   background-color: $white-text-collor;
     
   z-index: 1;
   @media screen and(min-width: 480px) {
-    width: 480px;
+    .page-header{
+      height: 60px;
+    }
   }
+ 
 }  
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .menu-container {
   position: fixed;
@@ -90,6 +100,12 @@
   }
 }
 
+@media screen and($tablet){
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+}
 
 
 // .mobile-button {
@@ -115,24 +131,27 @@
 // }
 
 /* Навигация по сайту */
-    
+
 
 .site-nav {
   display: flex;
   align-items: center;
-    
+   
 /* margin-left: 93px; */
     
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 88px;
+  padding-left: 0px;
 }
+
 @media (max-width: 767px) {
   .site-nav{
     display: none;
   }
-}  
+} 
 
-.site-nav__item {
+.site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
   
@@ -213,13 +232,16 @@
   
     
   /* навигация мейл и телефон */
-    
+
+
 .nav-field {
   display: flex;
+  flex-direction: column;
   margin-left: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 21px;
+  margin-bottom: 21px;
   padding-left: 0px;
+
     
   @include  transition(color)
   }
@@ -228,23 +250,36 @@
   .nav-field{
     display: none;
   }
-} 
+}
+
+
+
+ 
 
 .nav-field__link{
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
+  
   margin-top: 0px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: $primary-text-color ;
+  color: $primary-text-color ; 
 }      
-  
-.nav-field__item:not(:first-child) {
-  margin-left: 50px;
+
+.nav-field__link:not(:first-child){
+  padding-top: 5px;
 }
+
+.nav-field__link:not(:last-child){
+  padding-bottom: 5px;
+}
+
+
+// .nav-field__item:not(:first-child) {
+//   margin-left: 50px;
+// }
   
 .nav-field__link{
   &:hover,
@@ -254,8 +289,9 @@
     
     
 }
-  
-  
+
+
+
 .nav-field__icon {
     
   /* display: block; */
