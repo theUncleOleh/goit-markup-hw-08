@@ -10,11 +10,20 @@
   /* outline: 2px solid green; */
   min-height: 400px;
 }
-  
+ 
+@media screen and(min-width: 1200px) {
+  .hero {
+    
+    min-height: 600px;
+  }
+}
+
 .hero {
   text-align: center;
 }
   
+
+
 .hero__overlay {
   height: 400px; 
   
@@ -25,6 +34,12 @@
   background-size: cover;
 }
 
+@media screen and(min-width: 1200px) {
+  .hero__overlay {
+    height: 600px;
+    max-width: 1600px;
+  }
+}
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -36,12 +51,12 @@
 
 }
 
-.hero__title {
+.hero__title{
   margin-top: 0px;
   margin-bottom: 30px;
   padding-top: 118px;
   
-/* outline: 1px solid green; */
+  /* outline: 1px solid green; */
   
   color: $white-text-collor;
   font-family: Roboto, sans-serif;
@@ -53,7 +68,23 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-  
+@media screen and( min-width: 1200px) {
+  .hero__title{
+    padding-top: 200px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+    color: $white-text-collor;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
 /* кнопка заказа услуг */
   
 .hero__button {
@@ -68,4 +99,8 @@
   background-color: $link-collor;
   color: $white-text-collor;
 }
-  
+@media screen and(min-width: 1200px) {
+  .hero__button {
+    padding: 16px 32px;
+  }
+} 
