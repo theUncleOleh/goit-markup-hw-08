@@ -102,14 +102,6 @@
 }
   
 .form-area__text {
-  height: 120px;
-  width: 100%;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 10.5px;
-  padding-top: 10.5px;
-  resize: none;
-
   &:hover,
   &:focus {
     border-color: $link-collor;
