@@ -1994,6 +1994,13 @@ a:focus {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .progects__text {
+    margin-top: 63px;
+    margin-bottom: 63px;
+  }
+}
+
 .product__title {
   font-family: Roboto, sans-serif;
   font-style: normal;

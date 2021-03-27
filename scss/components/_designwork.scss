@@ -37,7 +37,7 @@
 
 @media screen and(min-width: 1200px) {
   .progects{
-  margin-top: 34px;
+    margin-top: 34px;
   }
 }
 
@@ -106,7 +106,14 @@
   letter-spacing: 0.03em;
   color: $white-text-collor;
 }
-  
+
+@media screen and(min-width: 1200px) {
+  .progects__text {
+    margin-top: 63px;
+    margin-bottom: 63px;
+  }
+}
+
 .product__title {
   font-family: Roboto, sans-serif;
   font-style: normal;
