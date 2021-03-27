@@ -11,45 +11,64 @@
   min-height: 400px;
 }
  
-@media screen and(min-width: 1200px) {
-  .hero {
-    
-    min-height: 600px;
-  }
-}
 
 .hero {
   text-align: center;
 }
   
 
-
-.hero__overlay {
-  height: 400px; 
-  
-  margin-right: auto;
-  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/himg.jpg);
-  background-position: center;
-  // background-size: 480px 400px;
-  background-size: cover;
-}
-
-@media screen and(min-width: 1200px) {
+@media screen and(min-width: 320px){
   .hero__overlay {
-    height: 600px;
-    max-width: 1600px;
-  }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero__overlay{
-    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/himg@2x.jpg);
-    // background-size: 480px 400px;
-    background-size: cover ;
+    height: 400px; 
+    margin-right: auto;
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/header-mobile.jpg);
+    background-position: center;
+    background-size: 480px 400px;
+  
   }
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-mobile@2x.jpg);
+      background-size: 480px 400px;
+      background-position: center;
+    }
+  }
 }
+
+@media screen and( min-width: 481px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-tablet.jpg);
+    background-size: 768px 400px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-tablet@2x.jpg);
+      background-size: 768px 400px;
+    }
+  }
+} 
+
+@media screen and( min-width: 769px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-desctop.jpg);
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-desctop@2x.jpg);
+      background-size: cover;
+    }
+  }
+} 
 
 .hero__title{
   margin-top: 0px;
