@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 
@@ -31,8 +32,13 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
   padding: 32px;
   background-color: $white-text-collor;
+  overflow-y: scroll;
   transform: translateX(100%);
   @include transition (transform);
   

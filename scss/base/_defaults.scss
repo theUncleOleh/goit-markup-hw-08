@@ -4,6 +4,12 @@ body {
   padding-top: 60px;
 }
 
+@media screen and(min-width: 1199px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
 .container {
   min-width: 320px;
   
@@ -12,7 +18,7 @@ body {
   margin-left: auto;
   margin-right: auto;
     
-  // /* outline: 1px solid green */
+  outline: 1px solid red;
 
   @media screen and(min-width: 480px ) {
     width: 480px;

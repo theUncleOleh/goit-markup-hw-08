@@ -1,10 +1,14 @@
+.footer {
+  background-color: $footer-back;
+}
+
 .footer-wrap{
 //   display: flex;
 //   justify-content: space-between;
 //   align-items: baseline;
 //
   display: flex;
- 
+  
  
 }
 @media screen and( max-width: 767px) {
@@ -22,19 +26,22 @@
 @media screen and(min-width: 1200px) {
   .footer-wrap {
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
 .footer__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
   
-.footer {
-
-  background-color: $footer-back ;
 }
+
+@media screen and(max-width: 1199px) {
+  .footer-nav {
+    align-items: center;
+  }
+}
+
   
 .logo--padding {
   
@@ -49,7 +56,7 @@
 .logo__text--white {
   color: $white-text-collor;
 }
-    
+
 /* физический адресс */
   
 .adress-field__link {
@@ -66,9 +73,14 @@
   font-size: 14px;
   line-height: 1.71;
   
-    /* outline: 1px solid #008000; */
+  /* outline: 1px solid #008000; */
 }
-  
+@media screen and(min-width: 1200px){
+  .adress-field__link {
+    display: flex;
+  }
+}
+ 
 .adress-field__map{
     
   margin-top: 20px;
@@ -78,12 +90,17 @@
 .address-field__nav-field--flex{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   padding-left: 0px;
   margin-bottom: 0px;
   margin-top: 8px;
 }
-  
+
+@media screen and(max-width: 1199px) {
+  .address-field__nav-field--flex{
+    align-items: center;
+  }
+} 
 
   
 .nav-field__link--littlepadding {

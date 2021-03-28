@@ -15,7 +15,12 @@
 .hero {
   text-align: center;
 }
-  
+
+@media screen and(min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
 
 @media screen and(min-width: 320px){
   .hero__overlay {
@@ -56,6 +61,7 @@
 
 @media screen and( min-width: 769px) {
   .hero__overlay {
+    height: 600px;
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-desctop.jpg);
     background-size: cover;
   }
@@ -69,11 +75,14 @@
     }
   }
 } 
+ 
+
 
 .hero__title{
-  margin-top: 0px;
+  margin: 0px;
+  
   margin-bottom: 30px;
-  padding-top: 118px;
+  padding-top: 200px;
   
   /* outline: 1px solid green; */
   
@@ -89,9 +98,12 @@
 }
 @media screen and( min-width: 1200px) {
   .hero__title{
+
+    margin: 0px;
+
     padding-top: 200px;
     margin-bottom: 30px;
-    margin-top: 0px;
+    
 
     color: $white-text-collor;
     font-family: Roboto, sans-serif;
