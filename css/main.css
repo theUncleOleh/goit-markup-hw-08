@@ -2062,12 +2062,11 @@ mobile-nav__link {
 
 .design-work {
   padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .design-work {
-    padding-top: 14px;
+    padding-top: 60px;
   }
 }
 
@@ -2092,12 +2091,6 @@ mobile-nav__link {
         flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .progects {
-    margin-top: 34px;
   }
 }
 
