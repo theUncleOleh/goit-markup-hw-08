@@ -2064,7 +2064,7 @@ mobile-nav__link {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .design-work {
     padding-top: 60px;
   }
